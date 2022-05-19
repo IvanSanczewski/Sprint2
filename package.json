@@ -1,0 +1,22 @@
+{
+  "name": "sprint2",
+  "version": "1.0.0",
+  "description": "Maquetar con Bootstrap y SASS Instalar Bootstrap con npm/yarn Dominar Responsive Layout Disñar con perspectiva Mobile First Dominar maquetación con grid de 12 columnas de Bootstrap Uso de ventanas modales Personalizar Bootstrap mediante SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanSanczewski/Sprint2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvanSanczewski/Sprint2/issues"
+  },
+  "homepage": "https://github.com/IvanSanczewski/Sprint2#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.3"
+  }
+}
