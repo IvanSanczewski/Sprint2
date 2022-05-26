@@ -1,5 +1,21 @@
+.color-change {
+    // filter: invert(98%) sepia(3%) saturate(919%) hue-rotate(217deg) brightness(115%) contrast(100%);
+    filter: invert(98%) sepia(54%) saturate(1%) hue-rotate(294deg) brightness(107%) contrast(101%);
+}
 
-$primary: #5265E1 ;
+.card-download {
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: .8rem;
+    
+}
+
+.img-container {
+    padding: 3.5rem;
+}
+
+// COLOR VARS
+$primary: #5265E1;
 $secondary: #FA5959;
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+// IMPORTS
+@import '../node_modules/bootstrap/scss/bootstrap'
