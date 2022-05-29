@@ -1,3 +1,9 @@
+// COLOR VARS
+$primary: #5265E1;
+$secondary: #FA5959;
+$tab-lines: #dee2e6;
+
+
 .color-change {
     // filter: invert(98%) sepia(3%) saturate(919%) hue-rotate(217deg) brightness(115%) contrast(100%);
     filter: invert(98%) sepia(54%) saturate(1%) hue-rotate(294deg) brightness(107%) contrast(101%);
@@ -13,9 +19,31 @@
     padding: 3.5rem;
 }
 
-// COLOR VARS
-$primary: #5265E1;
-$secondary: #FA5959;
+.custom-tab {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: .5px solid $tab-lines !important;
+
+    &:active {
+        border-bottom: 4px solid $secondary !important;
+    }
+
+    &:hover {
+        border-bottom: 4px solid $secondary !important;
+    }
+    
+    &:focus {
+        border-bottom: 4px solid $secondary !important;
+    }
+
+}
+// .custom-tab {
+
+//     border-radius: 0px !important;  
+// }
+
+
 
 // IMPORTS
 @import '../node_modules/bootstrap/scss/bootstrap'
