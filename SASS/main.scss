@@ -1,22 +1,79 @@
 // COLOR VARS
 $primary: #5265E1;
 $secondary: #FA5959;
-$tab-lines: #dee2e6;
+$dark: #6c757d;
+$light: #fbfbfb;
+$darkBlue: #2a2e51;
+$tab-lines: hsl(210, 14%, 89%);
 
+// CLASS > CHILD > HOVER
+
+.nav-link-custom {
+        &:hover {
+            color: $secondary !important;
+    }
+}
+
+.btn-outline-primary-custom {
+    color: white !important;
+    background-color: $primary !important;
+
+    &:hover {
+        color: $primary!important;
+        background-color: white !important;
+        border: 3px solid $primary !important;
+    }
+}
+
+.btn-outline-secondary-custom {
+    color: white !important;
+    background-color: $secondary !important;
+
+    &:hover {
+        color: $secondary!important;
+        background-color: white !important;
+        border: 3px solid $secondary !important;
+    }
+}
+
+.btn-outline-light-custom {
+    color: $dark !important;
+    background-color: $light !important;
+
+    &:hover {
+        color: $dark!important;
+        background-color: white !important;
+        border: 3px solid $dark !important;
+    }
+}
 
 .color-change {
-    // filter: invert(98%) sepia(3%) saturate(919%) hue-rotate(217deg) brightness(115%) contrast(100%);
-    filter: invert(98%) sepia(54%) saturate(1%) hue-rotate(294deg) brightness(107%) contrast(101%);
+    filter: invert(98%) sepia(3%) saturate(919%) hue-rotate(217deg) brightness(115%) contrast(100%);
+    // filter: invert(98%) sepia(54%) saturate(1%) hue-rotate(294deg) brightness(107%) contrast(101%);
 }
 
-.card-download {
+.card-custom {
     border: 1px solid rgb(207, 207, 207);
     border-radius: .8rem;
-    
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
-.img-container {
-    padding: 3.5rem;
+.cards-display {
+
+    &:nth-child(1) {
+        position: absolute;
+        top: -2rem;
+    }
+
+    &:nth-child(3) {
+        position: absolute;
+        top: 2rem;
+    }
+}
+
+.card-img-custom {
+    width: 50%;
 }
 
 .custom-tab {
@@ -30,20 +87,59 @@ $tab-lines: #dee2e6;
     }
 
     &:hover {
-        border-bottom: 4px solid $secondary !important;
+        color: $secondary !important;
+
     }
-    
+
     &:focus {
         border-bottom: 4px solid $secondary !important;
     }
 
 }
-// .custom-tab {
 
-//     border-radius: 0px !important;  
+// .accoridion-btn-custom:not(.collapsed)::after {
+//     background-image: url(/Sprint2/MEDIA/icon-arrow.svg) !important;
+//     color: $secondary !important;
 // }
 
 
+.accordion-btn-custom {
+    &:hover {
+        color: $secondary !important;
+    }
+
+    &:not(.collapsed){
+        background-color: white !important;
+        color: black !important;
+        outline: none !important;
+        box-shadow: none !important;
+    }
+    &:not(.collapsed)::after{
+        background-image: url(/Sprint2/MEDIA/icon-arrow-secondary.svg) !important;
+    }
+
+    &::after {
+        background-image: url(/Sprint2/MEDIA/icon-arrow.svg) !important;
+        color: var(--bs-secondary) !important;
+    }
+}
+
+.bg-dark-custom {
+    background-color: $darkBlue;
+}
+
+.nav-link {
+    &:hover {
+        .icon {
+            filter: brightness(0) saturate(100%) invert(43%) sepia(9%) saturate(4040%) hue-rotate(314deg) brightness(113%) contrast(97%);
+        }
+    }
+}
+
+.content-box {
+    box-sizing: content-box !important;
+}
 
 // IMPORTS
 @import '../node_modules/bootstrap/scss/bootstrap'
+
