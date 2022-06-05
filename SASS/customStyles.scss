@@ -1,0 +1,220 @@
+// Import color variables
+@import './variables';
+
+// CLASS > CHILD > HOVER
+
+// .nav-link-custom {
+//         &:hover {
+//             color: $secondary !important;
+//     }
+// }
+
+.nav-link {
+        &:hover {
+            color: $secondary !important;
+    }
+}
+
+
+// B U T T O N S //
+.btn-outline-primary {
+    color: white;
+    background-color: $primary;
+    border: 2px solid transparent;
+
+    &:hover {
+        color: $primary;
+        background-color: white;
+        border: 2px solid $primary;
+    }
+}
+
+.btn-outline-secondary {
+    color: white ;
+    background-color: $secondary;
+    border: 2px solid transparent;
+
+    &:hover {
+        color: $secondary;
+        background-color: white;
+        border: 2px solid $secondary;
+    }
+}
+
+.btn-outline-light {
+    color: $dark;
+    background-color: $light;
+    border: 2px solid transparent;
+
+    &:hover {
+        color: $dark;
+        background-color: white;
+        border: 2px solid $dark;
+    }
+}
+
+.btn-full {
+    height: 100%;
+    width: 100%;
+    @media screen and (max-width: 576px){
+        height: auto;
+
+    }
+}
+
+
+// C A R D S //
+.card {
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: .8rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+.cards-display-first-child {
+    &:first-child {
+        position: absolute;
+        top: -1.2rem;
+    }
+}
+
+.cards-display-last-child {
+    &:last-child {
+        position: absolute;
+        top: 1rem;
+    }
+}
+
+.card-img {
+    width: 50%;
+}
+
+.card-separator {
+    width: 100%;
+}
+
+
+// T A B S //
+.tab {
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    border-bottom: .5px solid $tab-lines !important;
+
+    &:active {
+        border-bottom: 4px solid $secondary !important;
+    }
+
+    &:hover {
+        color: $secondary !important;
+    }
+
+    &:focus {
+        border-bottom: 4px solid $secondary !important;
+        color: $secondary !important;
+    }
+
+}
+
+
+// A C C O R D I O N //
+.accordion-button {
+    &:hover {
+        color: $secondary;
+    }
+
+    &::after {
+        background-image: url(/Sprint2/MEDIA/icon-arrow.svg);
+        color: var(--bs-secondary) !important;
+    }
+
+    &:not(.collapsed){
+        background-color: white;
+        color: black;
+        outline: none;
+        box-shadow: none;
+    }
+    &:not(.collapsed)::after{
+        background-image: url(/Sprint2/MEDIA/icon-arrow-secondary.svg);
+    }
+}
+
+.accordion-body{
+    font-size: .95rem;
+}
+
+// F O R M    V A L I D A T I O N //
+.invalid-feedback {
+    background-color: $secondary;
+    color: white;
+    padding: .3rem 0 0 .5rem;
+    position: absolute;
+    top: 3.2rem;
+    z-index: 1;
+
+    width: 100%;
+    height: 1.8rem;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.valid-feedback {
+    background-color: $success;
+    color: white;
+    padding: .3rem 0 0 .5rem;
+    position: absolute;
+    top: 3.2rem;
+    z-index: 1;
+
+    width: 100%;
+    height: 1.8rem;
+    border-bottom-left-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    
+    font-size: .8rem;
+    font-style: italic;
+}
+
+
+// C O L O U R S //
+
+.bg-primary {
+    background-color: $primary !important;
+}
+
+.bg-dark {
+    background-color: $darkBlue !important;
+}
+
+.nav-link {
+    &:hover {
+        .icon {
+            filter: brightness(0) saturate(100%) invert(43%) sepia(9%) saturate(4040%) hue-rotate(314deg) brightness(113%) contrast(97%);
+            // fill: $secondary;
+        }
+    }
+}
+
+
+// M E D I A    Q U E R I E S //
+@media screen and (max-width: 768px) {
+    .navbar-footer {
+        flex-direction: column;
+    }
+
+    .social{
+            flex-direction: row !important;
+        }
+}
+
+// .icon {
+//     &:hover {
+//         svg {jjj
+//             fill: $secondary;
+//         }
+//     }
+// }
+
